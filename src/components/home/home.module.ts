@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
@@ -15,6 +15,5 @@ import { HomeComponent } from './home.component';
     CustomDialogboxModule,
     MaterialModule,
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeModule {}
