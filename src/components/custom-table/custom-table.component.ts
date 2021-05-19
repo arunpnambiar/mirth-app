@@ -14,7 +14,7 @@ import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
   styleUrls: ['./custom-table.component.css'],
 })
 export class CustomTableComponent implements OnInit {
-  listData: any;
+  listData: MatTableDataSource<any>;
   displayedColumns: string[] = [
     'fullName',
     'email',
@@ -22,8 +22,8 @@ export class CustomTableComponent implements OnInit {
     'city',
     'actions',
   ];
-  @ViewChild(MatSort) sort: any;
-  @ViewChild(MatPaginator) paginator: any;
+  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   searchKey: any;
 
   constructor(
@@ -39,7 +39,7 @@ export class CustomTableComponent implements OnInit {
     //   this.listData = new MatTableDataSource(array);
     //   this.listData.sort = this.sort;
     //   this.listData.paginator = this.paginator;
-    //   this.listData.filterPredicate = (data: any, filter: any) => {
+    //   this.listData.filterPredicate = (data, filter) => {
     //     return this.displayedColumns.some((ele) => {
     //       return (
     //         ele != 'actions' && data[ele].toLowerCase().indexOf(filter) != -1
