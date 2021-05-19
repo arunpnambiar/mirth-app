@@ -49,16 +49,6 @@
           </mat-radio-group>
         </div>
         <mat-form-field>
-          <mat-select formControlName="department" placeholder="Department">
-            <mat-option>None</mat-option>
-            <ng-container *ngFor="let department of departmentService.array">
-              <mat-option value="{{ department.$key }}"
-                >{{ department.code }}-{{ department.name }}</mat-option
-              >
-            </ng-container>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field>
           <input
             formControlName="hireDate"
             matInput
@@ -85,9 +75,7 @@
           >
             Submit
           </button>
-          <button mat-raised-button color="warn" ">
-            Clear
-          </button>
+          <button mat-raised-button color="warn">Clear</button>
         </div>
       </div>
     </mat-grid-tile>

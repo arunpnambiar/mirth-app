@@ -7,5 +7,6 @@ import { ApplicationFormComponent } from './application-form.component';
 @NgModule({
   declarations: [ApplicationFormComponent],
   imports: [CommonModule, MaterialModule, ReactiveFormsModule, FormsModule],
+  exports: [ApplicationFormComponent],
 })
 export class ApplicationFormModule {}

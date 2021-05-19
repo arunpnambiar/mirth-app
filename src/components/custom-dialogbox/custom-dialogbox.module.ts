@@ -7,5 +7,6 @@ import { CustomDialogboxComponent } from './custom-dialogbox.component';
 @NgModule({
   declarations: [CustomDialogboxComponent],
   imports: [CommonModule, MaterialModule, FormsModule],
+  exports: [CustomDialogboxComponent],
 })
 export class CustomDialogboxModule {}
